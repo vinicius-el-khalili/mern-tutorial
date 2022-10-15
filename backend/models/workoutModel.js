@@ -5,11 +5,11 @@ const workoutSchema = new Schema({
         type: String,
         required: true
     },
-    repetitions:{
+    load:{
         type:Number,
         required:true
     },
-    load:{
+    repetitions:{
         type:Number,
         required:true
     }
