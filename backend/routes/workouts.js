@@ -18,14 +18,13 @@ workoutRoutes.get('/:id',(req,res)=>{
 // POST new workout
 workoutRoutes.post('/', async (req,res)=>{
     const {title,load,repetitions} = req.body
-    
+
     try{
         const workout = await Workout.create({title,load,repetitions})
         res.status(200).json(workout)
     }catch(error){
         res.status(400).json({error: error.message})
     }
-    res.json({msg:'POST workout'})
 })
 
 // DELETE workout
