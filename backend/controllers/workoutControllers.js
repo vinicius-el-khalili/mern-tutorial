@@ -22,6 +22,7 @@ const GetSingleWorkout = async (req,res) => {
     }
     res.status(200).json(workout)
 }
+
 // post
 const PostWorkout = async (req,res) => {
     const {title,load,repetitions} = req.body;
